@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lato:wght@100&family=Lexend+Deca&family=Open+Sans:wght@300;400&family=Outfit:wght@400;500&family=Staatliches&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Big Shoulders Display;
+  line-height: 1.6;
+  font-size: 15px;
+  background: hsl(0, 0%, 95%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+.container {
+  max-width: 700px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+p {
+  /* margin-top: 10%; */
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: Lexend Deca;
+}
+
+h2 {
+  /* padding-top: 20%; */
+  font-size: 40px;
+  color: hsl(0, 0%, 95%);
+}
+
+.icon {
+  font-size: 25px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid hsl(0, 0%, 95%);
+  /* background-color:  hsl(0, 0%, 95%); */
+  border-radius: 30px;
+  width: 150px;
+  /* margin-top: 40px; */
+  box-shadow: 1px 1px #888888;
+  cursor: pointer;
+}
+
+.btn-1 {
+  /* background-color:  hsl(0, 0%, 95%); */
+  color: hsl(0, 0%, 95%);
+}
+
+.btn-1:hover {
+  transform: translateY(4px);
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+}
+
+.btn-2 {
+  color: hsl(0, 0%, 95%);
+}
+
+.btn-2:hover {
+  transform: translateY(4px);
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+}
+
+.btn-3 {
+  color: hsl(0, 0%, 95%);
+}
+
+.btn-3:hover {
+  transform: translateY(4px);
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+}
+
+.item {
+  color: #f5f5f5;
+  padding: 20px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.item-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.item-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.item-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 756px) {
+  .container {
+    display: grid;
+    /* grid-template-rows:1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
